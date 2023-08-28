@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <style>
+		h1 {
+			font-size: 5vw;
+			text-align: center;
+		}
+		
+		body {
+			background: url(./images/bg0.jpg) no-repeat fixed;
+			background-size: cover;
+		}
+		
+		/* 화면크기에 따라 반응하는 웹페이지 만들기
+		
+			@media [only | not] 미디어유형 [and 조건] * [and조건]
+			
+			A. 미디어유형
+			
+			1. all    : 모든 미디어 유형
+			2. print  : 인쇄장치
+			3. screen : 컴퓨터화면(모바일, pc....)
+			4. tv     : tv
+			
+			B. 미디어쿼리조건
+			
+			1. width, height, min-width, min-height, max-width, max-height
+			2. device-width, device-height, min-device-width, min-device-height, max-device-width, max-device-height
+			3. orientation: [portrate | landscape]
+			
+		*/
+		@media screen and (max-width:1024px) {
+			body {
+				background: url(./images/bg1.jpg) no-repeat fixed;
+				background-size: cover;			
+			}
+			h1 {}
+		}
+		@media screen and (max-width:768px) {
+			body {
+				background: url(./images/bg2.jpg) no-repeat fixed;
+				background-size: cover;			
+			}	
+		}
+		@media screen and (max-width:320px) {
+			body {
+				background: url(./images/bg3.jpg) no-repeat fixed;
+				background-size: cover;			
+			}
+		}
+	</style>	
+</head>
+<body>
+	<h1>안녕하세요!! 반갑습니다!!</h1>
+	
+</body>
+</html>

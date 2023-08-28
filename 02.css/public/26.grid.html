@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <style>
+		#wrapper {
+			display: grid;
+			grid-template-columns: 200px 200px 200px;
+			grid-template-rows: 150px;
+		}
+		
+		#wrapper {
+			width: 600px;
+			display: grid; /* 그리드 컨테이너로 선언 */
+			grid-template-columns: repeat(3, 1fr); /* 너비가 동일한 컬럼 3개를 설정 */
+			grid-template-rows: minmax(100px, auto); /* row높이의 최소 150px */
+		}
+		.items {
+			padding: 10px;
+			background-color: gray;
+		}
+		.items:nth-child(odd) {
+			background-color: white;
+		}
+	</style>
+</head>
+<body>
+	<!--div#wrapper>div.items*5-->
+	<div id="wrapper">
+		<div class="items">To place an item, you can refer to line numbers, or use the keyword "span" to define how many rows the item will span:</div>
+		<div class="items">To place an item, you can refer to line numbers, or use the keyword "span" to define how many rows the item will span:</div>
+		<div class="items">To place an item, you can refer to line numbers, or use the keyword "span" to define how many rows the item will span:</div>
+		<div class="items">To place an item, you can refer to line numbers, or use the keyword "span" to define how many rows the item will span:</div>
+		<div class="items">To place an item</div>
+	</div>
+</body>
+</html>

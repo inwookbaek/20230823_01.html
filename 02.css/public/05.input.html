@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <style>
+		/* 
+			1. input태그의 속성 text인 태그의 배경색을 red 
+			2. input태그의 속성 password인 태그의 배경색을 blue
+			
+			선택자[type="속성"] 
+		*/
+		input[type="text"] {
+			background: red;
+		}
+		input[type="password"] {
+			background: blue;
+		}
+		
+		/* 
+		   3. img태그의 src속성의 뒤에서부터 문자열을 선택
+		      jpg일 경우 border 3px solid red
+		      png일 경우 border 3px solid blue
+		      gif일 경우 border 3px solid green
+		*/
+		
+		img[src$=".jpg"] {
+			border: 3px solid rgb(255, 0, 0);
+		}
+		img[src$="png"] {
+			border: 3px dashed green;
+		}
+		img[src$="gif"] {
+			border: 3px dotted blue;
+		}
+		
+	</style>
+</head>
+<body>
+	<input type="text" /><br>
+	<input type="password" /><br>
+	<hr />
+	
+	<img src="aaa.jpg" alt="" width="200" height="100"/><br>
+	<img src="aaa.png" alt="" width="200" height="100"/><br>
+	<img src="aaa.gif" alt="" width="200" height="100"/><br>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

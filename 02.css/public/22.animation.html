@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <style>
+		#container {
+			width: 500px;
+			margin: 20px auto;
+		}
+		.box {
+			width: 100px;
+			height: 100px;
+			float: left;
+			margin: 50px;
+		}
+		#box1 {
+			background-color: #4cff00;
+			border: 1px solid transparent;
+			animation-name: shape; /* animation 대상을 정의 */
+			animation-duration: 3s; /* animation 실행 시간 */
+			animation-iteration-count: infinite; /* 무한반복 */
+		}
+		#box2 {
+			background-color: #4cffff;
+			border: 1px solid transparent;
+			animation-name: rotate; /* animation 대상을 정의 */		
+			animation-duration: 3s; /* animation 실행 시간 */	
+			animation-iteration-count: 2; /* 10 반복 */
+		}
+		
+		@keyframes shape { /* shape 애니메이션을 정의 */
+			from {
+				border: 1px solid transparent;
+			}
+			to {
+				border: 1px solid black;
+				border-radius: 50%;	
+			}
+		}
+		@keyframes rotate {
+			from {
+				transform: rotate(0deg);
+			}
+			to {
+				transform: rotate(45deg);
+			}
+		}
+		
+		.ani {
+			width: 100px;
+			height: 100px;
+			margin: 50px auto;
+			/* animation: keyframe 시간 무한, keyframe 시간 반대 */ 
+			animation: rotate 1.5s infinite, background 1.5s alternate;	/* alternate 반대 */	
+		}
+		
+		@keyframes rotate {
+			from { transform: perspective(120px) rotateX(0deg) rotateY(0deg); }
+			50% { transform: perspective(120px) rotateX(-180deg) rotateY(0deg); }
+			to { transform: perspective(120px) rotateX(-180deg) rotateY(-180deg); }
+		}
+		
+		@keyframes background {
+			from { background-color: red;} /* 시작 */
+			50% { background-color: green;} /* 중간 */
+			to { background-color: blue;} /* 종료 */
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="box" id="box1"></div>
+		<div class="box" id="box2"></div>
+	</div>
+	
+	<div class="ani"></div>
+	
+	<!-- 실습1.메뉴바 만들기(요소변형) 
+		1. 트랜지션 진행시간은 0.5초
+		2. 트랜지션 대상은 all로 지정(기본값이기 때문에 별도 지정하지 않아도 된다.)
+		3. 트랜지션 함수는 erase-in으로 한다.
+	-->
+    <nav>
+	    <ul class="top-menu">
+	      <li><a href="#">메뉴1</a></li>
+	      <li><a href="#">메뉴2</a></li>
+	      <li><a href="#">메뉴3</a></li>
+	      <li><a href="#">메뉴4</a></li>
+	      <li><a href="#">메뉴5</a></li>
+	      <li><a href="#">메뉴6</a></li>
+	    </ul>	
+	 </nav>
+	<!-- 실습2.img 애니메이션 만들기(요소변형) 
+		1. 입체감을 위해 perspective속성을 사용, 깊이는 200px정도로 지정
+		2. 변형함수는 rotateY()를 사용
+		3. 키프레임은 시작, 중간, 종료 3군데만 지정
+	-->	 
+	<div id="container">
+		<img src="images/bear.jpg" alt="곰인형 사진">
+	</div>
+</div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

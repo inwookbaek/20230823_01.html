@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <style>
+		/* 가상요소와 클래스 
+			1. :linked, ":visited, :active, :hover, :focus
+		*/
+		.navi ul li {
+			float: left;
+			width: 100px;
+			padding: 10px;
+			list-style-type: none;
+		}
+		
+		/* 방문링크와 방문하지 않은 링크 */
+		.navi a:link, .navi a:visited {
+			display: block;
+			font-size: 14px;
+			color: #000;
+			padding: 10px;
+			text-decoration: none; 
+			text-align: center;
+		}
+		
+		.navi a:hover, .navi a:focus {
+			background-color: #222;
+			color: #fff;
+		} 
+		
+		.navi a:active {
+			background-color: #f00;
+		}
+
+		#intro:target {
+			background-color: #0069c0;
+			color: #fff;
+		}
+		#room:target {
+			background-color: mediumspringgreen;
+			color: #fff;
+		}
+		#reservation:target {
+			background-color: orange;
+			color: #fff;
+		}
+		#confirm:target {
+			background-color: magenta;
+			color: #fff;
+		}
+	</style>
+</head>
+<body>
+	<!--nav.navi>ul>(li>a)*4-->
+	<nav class="navi">
+		<ul>
+			<li><a href="#intro">이용안내</a></li>
+			<li><a href="#room">객실소개</a></li>
+			<li><a href="#reservation">예약방법</a></li>
+			<li><a href="#confirm">예약하기</a></li>
+			<li><a href="01.basic.html">둘러보기</a></li>
+		</ul>
+	</nav>
+	
+	<div id="intro" class="contents">
+		<h2>이용안내</h2>
+	</div>
+	<div id="room" class="contents">
+		<h2>객실소개</h2>
+	</div>
+	<div id="reservation" class="contents">
+		<h2>예약방법</h2>
+	</div>
+	<div id="confirm" class="contents">
+		<h2>예약하기</h2>
+	</div>
+	
+	<style>
+		/* 가상요소와 클래스 
+			2. :target, :enabled, :disabled, :checked */
+		ul {
+			list-style-type: none;
+		}
+		
+		#signup input:checked + label {
+			color: red;
+			font-weight: bold;
+		}
+	</style>
+	
+	<!--ul>(li>input+label)*2-->
+	<ul id="signup">
+		<li>
+			<input type="radio" name="room" id="basic" />
+			<label for="basic">기본형(최대 2인)</label>
+		</li>
+		<li>
+			<input type="radio" name="room" id="family" />
+			<label for="family">가족형(최대 4인)</label>
+		</li>
+	</ul>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

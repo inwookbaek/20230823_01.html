@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    
+    <style>
+		/* 
+			자손, 후손 선택자
+			1. #header의 자손(>) h1의 문자색을 blue 
+			2. #header의 후손(공란) h1의 문자색을 red
+		*/
+		#header > h1 {
+			color: blue;
+		}
+		
+		#header h1 {
+			color: red;
+		}
+		
+		/* 실습. table tr 아래의 th태그의 문자색을 red로 적용하기 */
+		
+		table tr th {
+			color: red;
+		}
+	</style>
+   
+</head>
+<body>
+	<div id="header">
+		
+		<h1 class="title">제목(자손)</h1>
+		<h1 class="title">제목(자손)</h1>
+		
+		<div id="nav">
+			<h1>Navigation(후손)</h1>
+		</div>
+		
+		<div id="section">
+			<h1 class="title">제목(후손)</h1>
+			<p>
+				스포츠조선 노주환 기자]'축구의 신' 리오넬 메시(36·인터 마이애미)가 신들린 도움으로 극적인 드라마를 연출하며 팀을 FA컵 결승에 올려놓았다. 그는 MLS 진출 이후 8경기 연속 공격포인트(10골 3도움)를 이어갔다. 메시는 멀티(2~3호) 도움으로 패배 위기의 팀을 구해냈다. 소속팀 인터 마이애미에 7전 전승으로 리그스컵 첫 우승을 이끌었던 메시는 MLS 선두 신시내티 상대로도 통했다. 메시의 어시스트 두개로 동점을 만든 마이애미가 연장전 혈투 끝에 숭부차기에서 신시내티를 잡았다. 마이애미는 FA컵 결승에서 두번째 우승에 도전하게 됐다.
+			</p>
+		</div>
+	</div>
+	<hr />
+	
+	<!--table[border="1"]-->
+	<table border="1">
+		<tr>
+			<th>이름</th>
+			<th>전화번호</th>
+		</tr>
+		<tr>
+			<td>홍길동</td>
+			<td>010-9999-8888</td>
+		</tr>
+		<tr>
+			<td>홍길동</td>
+			<td>010-9999-8888</td>
+		</tr>
+		<tr>
+			<td>홍길동</td>
+			<td>010-9999-8888</td>
+		</tr>
+		<tr>
+			<td>홍길동</td>
+			<td>010-9999-8888</td>
+		</tr>
+		<tr>
+			<td>홍길동</td>
+			<td>010-9999-8888</td>
+		</tr>
+	</table>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

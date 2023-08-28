@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<h1>Input Tag</h1>
+	
+	<form action="login.html">
+		<fieldset>
+			<legend>로그인양식</legend>
+			아이디  : <input type="text" /><br>
+			비밀번호: <input type="password" /><br>
+			<input type="button" value="로그인"/>
+		</fieldset>
+	</form>
+	<hr />
+	<form action="login.html">
+		<fieldset>
+			<legend>로그인양식</legend>
+			<label for="userid">아이디 : </label>
+			<input type="text" id="userid" /><br>
+			<label for="pw">비밀번호 : </label>
+			<input type="password" id="pw"/><br>
+			<input type="button" value="로그인"/>
+			<input type="submit" value="로그인"/>
+		</fieldset>
+	</form>
+	<hr />
+	
+	<form action="">
+		<select name="food" id="">
+			<option value="1">김밥</option>
+			<option value="2">떡볶이</option>
+			<option value="3">순대</option>
+			<option value="4">어묵</option>
+			<option value="5">국수</option>
+		</select>
+		<br />
+		
+		<select name="" id="" size="8" multiple>
+			<optgroup label="책">
+				<option value="">HTML5</option>
+				<option value="">CSS3</option>
+				<option value="">JavaScript</option>	
+			</optgroup>
+			
+			<optgroup label="음식">
+				<option value="1">김밥</option>
+				<option value="2">떡볶이</option>
+				<option value="3">순대</option>
+				<option value="4">어묵</option>
+				<option value="5">국수</option>				
+			</optgroup>
+		</select>	
+	</form>
+	<hr />
+	
+	<form action="">
+		<textarea name="" id="" cols="30" rows="10">
+			1. 작성자
+		    2. 제목
+			3. 내용
+		</textarea>		
+	</form>
+	<hr />
+	
+	<form action="" method="get"> 
+		<!--(input+br)*10-->
+		text : <input type="text" name="userid"/><br />
+		password : <input type="password" name="pass"/><br />
+		file: <input type="file" name="file" /><br />
+		button : <input type="button" name="" value="다음페이지"/><br />
+		hidden : <input type="hidden" /><br />
+		image : <input type="image" src="./blackpink1.jpg" width="30" height="15"/><br /> <!-- submit대신 사용할 이미지를 넣는다.-->
+		radio : <input type="radio" /> 남자 <input type="radio" /> 여자<br />
+		radio : <input name="gender" type="radio" /> 남자 <input name="gender" type="radio" /> 여자 <input name="gender" type="radio" /> 중성<br />
+		checkbox : <input type="checkbox" /><br />
+		submit : <input type="submit" /><br />
+		reset : <input type="reset" /><br />
+	</form>
+	<hr />
+	
+	<form action="">
+		color : <input type="color" /><br>
+		date : <input type="date" /><br>
+		datetime-local : <input type="datetime-local" /><br>
+		month : <input type="month" /><br>
+		time : <input type="time" /><br>
+		week : <input type="week" /><br>
+		email : <input type="email" /><br>
+		number : <input type="number" /><br>
+		range : <input type="range" /><br>
+		search : <input type="search" /><br>
+		tel : <input type="tel" /><br>
+		url : <input type="url" /><br>
+	</form>
+	
+	<h3>실습문제. 배송주소폼작성하기</h3>
+	<table border="1">
+		<tr>
+			<td>
+				<input type="radio" />1111 
+				<input type="radio" />2222 
+			</td>
+			<td>
+				dkjsafhdkfjh
+			</td>
+
+		</tr>
+		<tr>
+			<td colspan="2">
+				<input type="file" />
+			</td>			
+		</tr>
+	</table>
+	<hr />
+	<a href="index.html">홈으로</a>	
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

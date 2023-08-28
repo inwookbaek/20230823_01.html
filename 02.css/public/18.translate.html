@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <style>
+		#container {
+			width: 800px;
+			height: 200px;
+			margin: 20px auto;
+		}
+		.origin {
+			width: 100px;
+			height: 100px;
+			border: 1px solid black;
+			float: left;
+			margin: 40px;
+		}
+		.origin > div {
+			width: 100px;
+			height: 100px;
+			background-color: orange;
+		}
+		
+		#movex:hover {
+			background-color: blue;
+			/* transform : translateX(), translateY() translate(x, y)*/
+			transform: translateX(50px); /* x축(가로) 50px만큼 이동 */
+		}
+		#movey:hover {
+			background-color: blue;
+			/* transform : translateX(), translateY() translate(x, y)*/
+			transform: translateY(50px); /* x축(가로) 50px만큼 이동 */
+		}
+		#movexy:hover {
+			background-color: blue;
+			/* transform : translateX(), translateY() translate(x, y)*/
+			transform: translate(50px, 50px); /* x축(가로) 50px만큼 이동 */
+		}
+		
+		#scalex:hover {
+			background-color: blue;
+			transform: scaleX(2); 
+		}
+		#scaley:hover {
+			background-color: blue;
+			transform: scaleY(1.5); 
+		}
+		#scalexy:hover {
+			background-color: blue;
+			transform: scale(0.5); 
+		}		
+	</style>
+</head>
+<body>
+	<!--div#container>(div.origin>div#movex)*3-->
+	<div id="container">
+		<div class="origin">
+			<div id="movex"></div>
+		</div>
+		<div class="origin">
+			<div id="movey"></div>
+		</div>
+		<div class="origin">
+			<div id="movexy"></div>
+		</div>
+	</div>
+	
+	<div id="container">
+		<div class="origin">
+			<div id="scalex"></div>
+		</div>
+		<div class="origin">
+			<div id="scaley"></div>
+		</div>
+		<div class="origin">
+			<div id="scalexy"></div>
+		</div>
+	</div>
+	
+	<style>
+		#rotate1:hover {
+			transform: rotate(40deg); 
+		}
+		#rotate2:hover {
+			transform: rotate(-20deg); 
+		}		
+	</style>
+	<div id="container">
+		<div class="origin">
+			<div id="rotate1"></div>
+		</div>
+		<div class="origin">
+			<div id="rotate2"></div>
+		</div>
+	</div>
+</body>
+</html>
+
+
+
+
+
+
+
+

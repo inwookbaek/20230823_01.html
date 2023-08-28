@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <style>
+		p { color: white; text-align: center;}
+		.box {
+			padding: 5px 45px;
+			margin: 5px;
+			background-color: red;
+		}
+		.container {
+			width: 100%;
+			height: 150px;
+			display: flex;
+			background-color: #eee;
+			border: 1px solid black;
+			margin-bottom: 20px;
+		}	
+		#opt1 {
+			align-items: flex-start; /* 시작점기준 배치 */
+		}	
+		#opt2 {
+			align-items: flex-end; /* 끝점기준 배치 */
+		}	
+		#opt3 {
+			align-items: center; /* 중앙기준 배치 */
+		}	
+		#opt4 {
+			align-items: baseline; /* 문자기준 배치 */
+		}	
+		#opt5 {
+			align-items: stretch; /* strech 배치 */			
+		}	
+	</style>
+</head>
+<body>
+	<div class="container" id="opt1">
+		<div class="box"><p>1</p></div>
+		<div class="box"><p>2</p></div>
+		<div class="box"><p>3</p></div>
+		<div class="box"><p>4</p></div>
+	</div>
+	<div class="container" id="opt2">
+		<div class="box"><p>1</p></div>
+		<div class="box"><p>2</p></div>
+		<div class="box"><p>3</p></div>
+		<div class="box"><p>4</p></div>		
+	</div>
+	<div class="container" id="opt3">
+		<div class="box"><p>1</p></div>
+		<div class="box"><p>2</p></div>
+		<div class="box"><p>3</p></div>
+		<div class="box"><p>4</p></div>		
+	</div>
+	<div class="container" id="opt4">
+		<div class="box"><p>1</p></div>
+		<div class="box"><p style="font-size: 14px;">2</p></div>
+		<div class="box"><p style="font-size: 25px;">3</p></div>
+		<div class="box"><p style="font-size: 10px;">4</p></div>		
+	</div>
+	<div class="container" id="opt5">
+		<div class="box"><p>1</p></div>
+		<div class="box"><p>2</p></div>
+		<div class="box"><p>3</p></div>
+		<div class="box"><p>4</p></div>		
+	</div>
+</body>
+</html>

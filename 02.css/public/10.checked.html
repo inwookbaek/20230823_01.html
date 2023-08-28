@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <style>
+		/* input태그(checkbox)일때 checked여부 */
+		input[type=":checkbox"]:checked + div {
+			height: 0px;
+		}
+		
+		div {
+			overflow: hidden;
+			width: 650px;
+			height: 300px;
+			-ms-transition-duration: 1s;     /* ms계열 ie, edget */
+			-webkit-transition-duration: 1s; /* chrome */
+			-moz-transition-duration: 1s;    /* mozila(firefox) 계열 */
+			transition-duration: 1s;         /* 상기이외의 web browser */
+		}
+	</style>
+</head>
+<body>
+	<input type="checkbox" />
+	<div>
+		<p>
+			항저우 아시안게임에 나서는 한국 축구 대표팀이 이상민(성남FC)의 대체자로 김태현(베갈타 센다이)을 발탁했다.
+
+이기흥 대한체육회 회장은 24일 충북 진천선수촌에서 열린 기자회견에서 아시안게임 축구 대표팀에 김태현이 마지막 22번째 선수로 합류했다고 밝혔다.
+
+황선홍 감독이 이끄는 축구 대표팀은 지난달 22일 아시안게임 최종 명단을 발표했으나, 이후 이상민이 음주운전 이력으로 인해 중도 낙마했다. 이상민은 충남아산에서 뛰던 2020년 5월 음주운전으로 적발돼 벌금형을 받은 바 있다. 올해 8월까지 국가대표로 뽑힐 수 없다는 규정을 대한축구협회가 뒤늦게 발견해 엔트리에서 제외했다.
+		</p>
+	</div>
+</body>
+</html>

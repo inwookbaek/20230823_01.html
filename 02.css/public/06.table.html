@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <style>
+		/*
+			1. caption-side: [top | bottom] - 캡션은 기본적으로 위에 표시
+			2. border 선의 굵기     
+		*/
+		table {
+			caption-side: bottom;
+			border: 1px soild red;
+			border-collapse: collapse; /* [ collapse | seperate ] */
+		}
+		th, td {
+			border: 1px dotted blue;
+			padding: 10px;
+			text-align: center;
+			width: 100px;
+		}
+	</style>
+</head>
+<body>
+	<table>
+		<tr>
+			<th>용도</th>
+			<th>중량</th>
+			<th>갯수</th>
+			<th>가격</th>
+		</tr>
+		<tr>
+			<td rowspan="2">선물용</td>
+			<td>3kg</td>
+			<td>11~15과</td>
+			<td>35000원</td>
+		</tr>
+		<tr>
+			<td>3kg</td>
+			<td>11~15과</td>
+			<td>35000원</td>
+		</tr>
+		<tr>
+			<td rowspan="2">가정용</td>
+			<td>3kg</td>
+			<td>11~15과</td>
+			<td>35000원</td>
+		</tr>
+		<tr>
+			<td>3kg</td>
+			<td>11~15과</td>
+			<td>35000원</td>
+		</tr>
+
+	</table>
+</body>
+</html>

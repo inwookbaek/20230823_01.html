@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+		#wrapper1 {
+			display: grid;
+			grid-template-columns: repeat(3, 200px);
+			grid-template-rows: minmax(100px, auto);
+			grid-gap: 20px 30px; /* 컬럼간격, 줄간격*/
+			/* grid-column-gap: 20px;
+			   grid-row-gap: 30px; */
+		}
+		.items {
+			padding: 15px;
+			background-color: #eee;
+		}
+		.items:nth-child(odd) {
+			background-color: #bbb;
+		}
+	</style>
+</head>
+<body>
+	<div id="wrapper1">
+		<div class="items">To place an item, you can refer to line numbers, or use the keyword "span" to define how many rows the item will span:</div>
+		<div class="items">To place an item, you can refer to line numbers, or use the keyword "span" to define how many rows the item will span:</div>
+		<div class="items">To place an item, you can refer to line numbers, or use the keyword "span" to define how many rows the item will span:</div>
+		<div class="items">To place an item</div>
+		<div class="items">To place an item, you can refer to line numbers, or use the keyword "span" to define how many rows the item will span:</div>
+		<div class="items">To place an item, you can refer to line numbers, or use the keyword "span" to define how many rows the item will span:</div>
+	</div>
+</body>
+</htm

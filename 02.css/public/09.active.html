@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <style>
+		/*
+			:active : 마우스를 클릭, :hover: 마우스가 위에 있을 때
+		*/
+		h1:active { color: blue;}
+		h1:hover { color: red;}
+		
+		/*
+			:enabled, :disabled :focus
+		*/
+		input:enabled { background-color: black;}
+		input:disabled { background-color: orange;}
+		input:focus { background-color: blue;}
+	</style>
+</head>
+<body>
+	<h1>Action Selector</h1>
+	
+	<h2>Enabled</h2>
+	<input type="text" />
+	<h2>Disabled</h2>
+	<input type="text" disabled="disabled"/> <!-- 속성과 값이 동일 할 경우 값만 정의가능 -->
+</body>
+</html>

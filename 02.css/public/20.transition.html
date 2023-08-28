@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <style>
+		.box {
+			width: 100px;
+			height: 100px;
+			background-color: blue;
+			border: 1px solid black;
+			margin: 20px auto;
+			transition-property: width, height; /* 대상은 넓이, 높이*/
+			transition-duration: 2s, 1s; /* 시간, 2초, 1초 */
+		}
+		
+		.box:hover {
+			width: 200px;
+			height: 50px;
+		}
+		
+		.box1 {
+			width: 100px;
+			height: 100px;
+			background-color: orange;
+			border: 1px solid black;
+			margin: 20px auto;
+			transition: 2s  ease-in; /* 대상 all, 시간, 2초 함수:ease-in */			
+		}
+		
+		.box1:hover { /* box1에 있는 모든 속성이 대상*/
+			width: 200px;
+			height: 50px;
+			background-color: #f50;
+			transform: rotate(270deg);
+		}
+	</style>
+</head>
+<body>
+	<div class="box"></div>
+	<div class="box1"></div>
+</body>
+</html>

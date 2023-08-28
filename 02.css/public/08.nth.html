@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <style>
+		/* 수열(구조)선택자 
+		   1. + : 바로 뒤에 있는 태그를 선택
+		   2. ~ : 뒤에 있는 모든 태그를 선택
+		*/
+		
+		h1 + h2 {
+			color: red;
+		}
+		h1 ~ h2 {
+			color: blue;
+		}
+		
+		/* 
+			:first-child, :last-child, :nth-child()
+		*/
+		div h3:first-child { color: red;}
+		div h3:last-child { color: red;}
+		div h3:nth-child(2n) { color: blue;}
+		div h3:nth-child(3n) { color: orange ;}
+	</style>
+</head>
+<body>
+	<!--h1{Header - $}*5-->
+	<h1>Header - 1</h1>
+	<h2>Header - 2</h2>
+	<h2>Header - 3</h2>
+	<h2>Header - 4</h2>
+	<h2>Header - 5</h2> <!--이클립스 라인삭제 단축키 ctrl + d -->
+	<hr />
+	
+	<!--div>h3{Header - $}*5-->
+	<div>
+		<h3>Header - 1</h3>
+		<h3>Header - 2</h3>
+		<h3>Header - 3</h3>
+		<h3>Header - 4</h3>
+		<h3>Header - 5</h3>
+		<h3>Header - 5</h3>
+		<h3>Header - 5</h3>
+		<h3>Header - 5</h3>
+		<h3>Header - 5</h3>
+		<h3>Header - 5</h3>
+		<h3>Header - 5</h3>
+	</div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

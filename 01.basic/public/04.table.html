@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Insert title here</title>
+</head>
+<body>
+	<h1>table tag</h1>
+	
+	<!--table>(tr>th*2)+(tr>td*2)*2-->
+	<table border="2">
+		<tr>
+			<th>글번호</th>
+			<th>제목</th>
+		</tr>
+		<tr>
+			<td>1</td>
+			<td>html5/css3</td>
+		</tr>
+		<tr>
+			<td>2</td>
+			<td>javascript</td>
+		</tr>
+	</table>
+	<hr />
+	
+	<table border="1">
+		<thead>
+			<tr>
+				<th>글번호</th>
+				<th>제목</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>1</td>
+				<td>html5/css3</td>
+			</tr>
+			<tr>
+				<td>200</td>
+				<td>javascript</td>
+			</tr>			
+		</tbody>
+		<tfoot>
+			<tr>
+				<td>전화번호</td>
+				<td>02.9999.8888</td>
+			</tr>
+		</tfoot>	
+	</table>
+	<h3>실습. 수업시간표작성하기</h3>
+	<!--	
+	교시  월   화   수 목 금 토 일 : tr>th
+	1교시 수학 영어 국어 .....
+	...
+	8교시 과학 ....      체육-->
+	
+	<!--table>(thead>tr>th*8)+(tbody>(tr>td*8)*8)-->
+	<table border="1">
+		<thead>
+			<tr>
+				<th>교시</th>
+				<th>월</th>
+				<th>화</th>
+				<th>수</th>
+				<th>목</th>
+				<th>금</th>
+				<th>토</th>
+				<th>일</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>1교시</td>
+				<td>수학</td>
+				<td>과학</td>
+				<td>영어</td>
+				<td>지리</td>
+				<td>일어</td>
+				<td rowspan="8"></td>
+				<td rowspan="8"></td>
+			<tr>
+				<td>2교시</td>
+				<td>수학</td>
+				<td>과학</td>
+				<td>영어</td>
+				<td>지리</td>
+				<td>일어</td>
+			<tr>
+				<td>3교시</td>
+				<td>수학</td>
+				<td>과학</td>
+				<td>영어</td>
+				<td>지리</td>
+				<td>일어</td>
+			<tr>
+				<td>4교시</td>
+				<td>수학</td>
+				<td>과학</td>
+				<td>영어</td>
+				<td>지리</td>
+				<td>일어</td>
+			<tr>
+				<td>5교시</td>
+				<td>수학</td>
+				<td>과학</td>
+				<td>영어</td>
+				<td>지리</td>
+				<td>일어</td>
+			<tr>
+				<td>6교시</td>
+				<td>수학</td>
+				<td>과학</td>
+				<td>영어</td>
+				<td>지리</td>
+				<td>일어</td>
+			<tr>
+				<td>7교시</td>
+				<td>수학</td>
+				<td>과학</td>
+				<td>영어</td>
+				<td>지리</td>
+				<td>일어</td>
+			<tr>
+				<td>8교시</td>
+				<td colspan="5">동아리</td>
+			</tr>
+
+		</tbody>
+	</table>
+	
+	<hr />
+	<a href="index.html">홈으로</a>	
+</body>
+</html>

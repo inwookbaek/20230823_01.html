@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <style>
+		.body {
+			background-image: url('blackpink3.jpg');
+			background-repeat: no-repeat; /* no-repeat, repeat-x, repeat-y*/
+			background-size: 100%;
+		}
+		/* background-clip : 배경을 어디까지 적용할 것인지 여부를 정의 */
+		#clip-1 { background-clip: border-box;} /* 테두리까지  */
+		#clip-2 { background-clip: padding-box;} /* 테두리를 뺀 범위까지 */
+		#clip-3 { background-clip: content-box;} /* 내용부분까지만 */
+		
+		#clip-1, #clip-2, #clip-3 {
+			width: 200px;
+			height: 200px;
+			background-color: orange;
+			margin: 20px;
+			background-image: url('blackpink3.jpg');
+		}
+		.grd {
+			width: 200px;
+			height: 200px;
+			background: blue;	
+			/* linear-gradient(to 방향 or 각도, 색상중지점, [색상중지점,...]*/	
+			background: linear-gradient(to left top, green, blue, orange, white);	
+		}
+		.grd1 {
+			width: 200px;
+			height: 200px;
+			background: blue;	
+			background: linear-gradient(10deg, #fff, #000);	
+		}
+	</style>
+</head>
+<body>
+	
+	<!--div#container>(div.desc#clip-$)*3-->
+	<div id="container">
+		<div class="desc" id="clip-1">휴스턴 다이나모와 리얼 솔트레이크 간 승자와 결승전에서 만난다.</div>
+		<div class="desc" id="clip-2">휴스턴 다이나모와 리얼 솔트레이크 간 승자와 결승전에서 만난다.</div>
+		<div class="desc" id="clip-3">휴스턴 다이나모와 리얼 솔트레이크 간 승자와 결승전에서 만난다.</div>
+	</div>
+	
+	<div class="grd"></div>
+	<div class="grd1"></div>
+	
+	<!-- 가상요소와 가상클래스 
+		1. ::before, ::after, ::first-line, ::first-letter
+		2. :target, :enabled, :disabled, :checked, :not
+	-->
+	<!--div.container>h1{제품목록}+ul>li{제품-$$}*4-->
+	
+	<style>
+		li.new::before {
+			content: "신제품";
+			background-color: red;
+			font-size: x-small;
+			padding: 2px 4px;
+			margin: 0, 10px;
+			border-radius: 2px;
+			color: white; 
+		}
+	</style>
+	
+	<div class="container">
+		<h1>제품목록</h1>
+		<ul>
+			<li class="new">제품-01</li>
+			<li>제품-02</li>
+			<li>제품-03</li>
+			<li class="new">제품-04</li>
+		</ul>
+	</div>
+	
+	<style>
+		/* input[type=text], input[type=tel],  input[type=email] {
+			background-color: blue;
+		} */
+		input:not([type=password]) {
+			background-color: red;
+		}
+	</style>
+	<div class="xxx">
+		<input type="text" /><br>
+		<input type="email" /><br>
+		<input type="tel" /><br>
+		<input type="password" />
+	</div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
